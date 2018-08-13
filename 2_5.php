@@ -7,9 +7,18 @@
             $this->name = $name;
             $this->age = $age;
 		}
-    }
+            
+            public function getName(){
+                  return $this->name;
+            }
+
+            public function setName(){
+                  $this->name = $name;
+            }
+    
+      }
     
     $user1 = new User('John, 40');
 
-    echo $user->name;
+    echo $user1->getName();
     
