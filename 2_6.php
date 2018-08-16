@@ -14,7 +14,7 @@
 
     public function __construct($name, $age, $balance){
       parent::__construct($name, $age);
-      $this->balance = $balance,
+      $this->balance = $balance;
     }
 
     public function pay($amount){
