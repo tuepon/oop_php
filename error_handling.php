@@ -9,8 +9,15 @@ class User{
   }
 }
 
+function run($object){
+  $object->hello();
+}
+
 try{
   $user = new User();
-} catch(Exception $e){
-  echo $e->getMessege();
+  run(null);
+} catch(Error $e) {
+  echo '<strong>Error on line:'.$e->getLine().' in '.$e->getFile().'</strong>'.$e->getMessege().'<br>';
+} finally{
+  echo 'Finally Ran...<br>';
 }
